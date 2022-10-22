@@ -36,7 +36,7 @@ public class Equation {
                 throw new Exceptions(exception);
 
             }else if(X == 0){
-                exception = ExceptionVal.exceptionMeaning.get(ExceptionVal.illegalValue);
+                exception = ExceptionVal.exceptionMeaning.get(ExceptionVal.divideByZero);
                 throw new Exceptions(exception);
             }
             
