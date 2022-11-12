@@ -19,6 +19,7 @@ public class App {
      * @param args
      */
     public static void main(String[] args) {
+        try{
         try
         {
             out.print("Enter file name: ");
@@ -48,6 +49,10 @@ public class App {
         {
             out.print("Exception reason: Perhaps wrong file path");
         }
+    } finally {
+        var exception = ExceptionVal.exceptionMeaning.get(ExceptionVal.divideByZero);
+        throw new ExceptionR(exception);
+    } 
 
     }
 }

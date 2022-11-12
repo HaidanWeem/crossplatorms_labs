@@ -18,7 +18,6 @@ public class Equation {
     public double calculator(double X) throws Exceptions {
         double y, radian;
         radian = Math.toRadians(8*X);
-
         try{
             y= 1.0 / Math.tan(radian);
 
