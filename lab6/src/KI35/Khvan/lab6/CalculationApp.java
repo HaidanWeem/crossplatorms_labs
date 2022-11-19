@@ -17,10 +17,12 @@ public class CalculationApp {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter data: ");
         double data = s.nextDouble();
-
+        for(var i = 0; i < 5; i++) {
         try
         {
-            obj.calculate(data);
+            
+                obj.calculate(data + i);
+            
         }
         catch (CalcException ex)
         {
@@ -39,5 +41,6 @@ public class CalculationApp {
             }
             s.close();
     }
+}
     
 }
